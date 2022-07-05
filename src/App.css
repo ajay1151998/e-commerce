@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-clr: #4a5c6c;
+  --bg-clr: #f2f4fc;
+  --border-clr: rgb(156, 176, 193);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg-clr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main-style {
+  max-width: 140rem;
+  margin: auto;
+  padding: 3rem;
+  display: inline-block;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+/* -----Item Image Styling ------*/
+img {
+  width: 200px;
+  height: 300px;
+  min-width: 10rem;
+  max-height: 30rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+/* img:hover{
+  animation-name: imagerotate;
+}
+@keyframes imagerotate{
+  from {
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(145deg);
+  }
+} */
+.card {
+  display: inline-block;
+  margin: 6rem;
+  margin-left: 10%;
+}
+.style-mrp {
+  display: flex;
+  gap: 3rem;
+}
+.un-mrp {
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: blue;
+  color: red;
+  font-family: Trade "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* -----Navbar Style----- */
+.second-nav {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+
+.second-nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+.item-nav {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+/* ----Footer styling----- */
+.foot-style {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4a5c6c;
+  /* margin-bottom: 0.5%; */
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* ----Button style---- */
+.btn-success {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.btn-style {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  img {
+    width: 300px;
+    height: 400px;
+    min-width: 20rem;
+    max-height: 40rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
   }
 }
